@@ -1,0 +1,36 @@
+section.search-input{
+    
+    .input-group{
+        z-index: 1050;
+        width: 480px;
+        height: 50px;
+        font-size: 18px;
+
+        .form-control{
+            font-style: italic;
+            border-radius: 20px 0px 0px 20px;
+            border: 1px solid $border-color;
+            padding-right: 0px;
+        }
+
+        .search-btn {
+            border-radius: 0px 20px 20px 0px;
+            border: 1px solid $border-color;
+            background: white;
+        }
+    }
+
+    /* Placeholder cross-browser */
+    ::placeholder { 
+        color: $placeholder-color;
+        opacity: 1; 
+    }
+    
+    :-ms-input-placeholder { 
+        color: $placeholder-color;
+    }
+    
+    ::-ms-input-placeholder { 
+        color: $placeholder-color;
+    }
+}
