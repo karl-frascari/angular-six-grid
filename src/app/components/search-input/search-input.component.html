@@ -1,11 +1,10 @@
 <section class="search-input h-100 container">
     <div class="row h-100 justify-content-center align-items-center">
-        <div class="input-group">
-            <input (keydown.enter)="querySearch(query.value)" class="form-control" type="search" placeholder="Pesquise por nome, gênero ou grupo..."
-                id="search-input" #query>
+        <div [class]='size + " input-group "'>
+            <input (keydown.enter)="querySearch(query.value)" class="form-control" type="search" placeholder="Pesquise por nome, gênero ou grupo..." id="search-input" #query>
             <span class="input-group-append">
-                <button (click)="search(query.value)" class="btn border-left-0 search-btn" type="button">
-                    <img src="assets/search.png">
+                <button (click)="querySearch(query.value)" class="btn border-left-0 search-btn" type="button">
+                    <img [src]="size === 'small-size' ? 'assets/search-small.png' : 'assets/search.png'">
                 </button>
             </span>
         </div>
