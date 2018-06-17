@@ -1,0 +1,34 @@
+<section class="search-grid">
+  <div class="container h-100">
+    
+    <div class="title">
+      Resultados de busca para
+      <b>"{{queryValue}}"</b>
+    </div>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col"></th>
+          <th scope="col">Nome</th>
+          <th scope="col">Gênero</th>
+          <th scope="col">Grupo</th>
+          <th scope="col">Idade <a class="nav-link dropdown-toggle"></a></th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr *ngFor="let item of list">
+          <td width="50">
+            <img [src]="item.image">
+          </td>
+          <td width="300">{{item.nome}}</td>
+          <td>{{item.genero}}</td>
+          <td>{{item.grupo}}</td>
+          <td>{{item.idade}} anos</td>
+        </tr>
+        <td class="spacer"></td>
+      </tbody>
+    </table>
+  </div>
+</section>
