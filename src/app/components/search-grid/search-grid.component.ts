@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Singer } from '../../shared/models/singer';
 import { CommonServices } from '../../shared/services/common.services';
 import { Constants } from '../../shared/constants/constants';

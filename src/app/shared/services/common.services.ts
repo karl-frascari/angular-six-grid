@@ -1,14 +1,9 @@
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
 import { ActivatedRoute } from '@angular/router';
-import { Http, Response, Headers, RequestOptions } from '@angular/http';
-import { HttpErrorResponse } from "@angular/common/http";
-import { Singer } from '../models/singer';
+import { Http } from '@angular/http';
 import { map } from 'rxjs/operators';
-import { catchError } from 'rxjs/operators';
 
 @Injectable()
-
 export class CommonServices {
 
     constructor(private http: Http, private route: ActivatedRoute) { }
