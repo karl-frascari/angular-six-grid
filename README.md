@@ -21,4 +21,5 @@ Increase the test coverage
 
 ### Notes:
 Apllying CSS basics architecture of SMACSS (https://smacss.com/)
+Using Bootstrap 4 
 Don't forget to search for exaltasamba rs :)
